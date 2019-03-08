@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    background-color: black;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+   
+   
+}
+#background{
+ background-image: url("/Users/PhiHai/Desktop/TriviaGame/assets/images/images (4).jpeg");
+ 
+    width: 1000px;
+    background-color: #cccccc;
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 50px auto;
+
+}
+#repeat{
+    background-image: url("/Users/PhiHai/Desktop/TriviaGame/assets/images/images.jpeg");
+    margin: 0;
+    padding: 0;
+    
+
+}
+.btn {
+    width: 350px;
+    border: 3px solid yellow;
+    background: black;
+    color: yellow;
+    margin-top: 30px; 
+    
+}
+.textresults{
+    background: yellow;
+    border:3px solid black;
+    border-radius: 5px;
+    width: 350px;
+    margin: auto;
+
+}
+.quiz{
+text-align: left;
+padding: 50px;
+background: black;
+color: yellow;
+}
+#title{
+    font-size: 80px;
+    background: yellow;
+    border:10px solid black;
+    color: black;
+    border-radius: 10px;
+    padding: 30px;
+}

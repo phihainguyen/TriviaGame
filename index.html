@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BATMAN TRIVIA</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div id="repeat">
+        <div id="background">
+            <div id="title"><h1>BATMAN TRIVIA</h1></div>
+            <h2 id="show-numbers"></h2>
+            <div id="startDiv">
+
+                <div class="startWrap"><button id="start" type="button" class="btn btn-warning">
+                        <h3>START</h3>
+                    </button></div>
+
+            </div>
+
+            <div class="timewrap">
+                <div id="timeLeft"><button id="timeButton" type="button" class="btn btn-warning">
+                        <h1>TIME LEFT: <span id="show-number"></span></h1>
+                    </button></div>
+            </div>
+            <div id="div1">
+                <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Click to Reveal Questions
+                </button>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+
+                                <form class="quiz" name="trivia">
+                                    <p>1) What super villain once broke Batman's back, leaving him crippled and
+                                        wheelchair-bound?</p>
+                                    <input type="radio" name="villian" value="a"> Joker <br>
+                                    <input type="radio" name="villian" value="b"> Ja's Al Ghul <br>
+                                    <input type="radio" name="villian" value="c"> Riddler <br>
+                                    <input type="radio" name="villian" value="d"> Bane <br><br>
+
+                                    <p>2) What is the names of Bruce Wayne's father?</p>
+                                    <input type="radio" name="father" value="a"> Wayne <br>
+                                    <input type="radio" name="father" value="d"> Thomas <br>
+                                    <input type="radio" name="father" value="b"> John <br>
+                                    <input type="radio" name="father" value="c"> Bruce <br><br>
+
+
+                                    <p>3) What year was the character of Robin first introduced?</p>
+                                    <input type="radio" name="robin" value="a"> 1942 <br>
+                                    <input type="radio" name="robin" value="b"> 1956 <br>
+                                    <input type="radio" name="robin" value="d"> 1940 <br>
+                                    <input type="radio" name="robin" value="c"> 1950 <br><br>
+
+                                    <p>4) What was Alfred the butler's original family name?</p>
+                                    <input type="radio" name="alfred" value="a"> Pennyworth <br>
+                                    <input type="radio" name="alfred" value="true"> Beagle <br>
+                                    <input type="radio" name="alfred" value="b"> Windham <br>
+                                    <input type="radio" name="alfred" value="c"> Chapsman <br><br>
+
+                                    <p>5) What was Bat-hound's name?</p>
+                                    <input type="radio" name="ace" value="d"> Ace <br>
+                                    <input type="radio" name="ace" value="a"> Lucky <br>
+                                    <input type="radio" name="ace" value="b"> Champ <br>
+                                    <input type="radio" name="ace" value="c"> Bats <br><br>
+
+                                    <p>6) Which of the following characters did Bruce Wayne have a son with?</p>
+                                    <input type="radio" name="son" value="d"> Talia Al Chul<br>
+                                    <input type="radio" name="son" value="a"> Vesper Fairchild <br>
+                                    <input type="radio" name="son" value="b"> Catwoman <br>
+                                    <input type="radio" name="son" value="c"> Batwoman <br><br>
+
+                                    <p>7)Who killed Jason Todd (the second Robin)?</p>
+                                    <input type="radio" name="jason" value="true"> Joker <br>
+                                    <input type="radio" name="jason" value="false"> Batman <br>
+                                    <input type="radio" name="jason" value="false"> Penguin <br>
+                                    <input type="radio" name="jason" value="false"> Bane <br>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="doneDiv">
+                    <div class="donewrap1"><button id="done" type="button" class="btn btn-warning">
+                            <h1>DONE</h1>
+                        </button></div>
+                </div>
+            </div>
+            <div id="resultsPage">
+
+                <h1 class="textresults">CORRECT: <span id="correct"></span></h1>
+                <h1 class="textresults">WRONG: <span id="wrong"></span></h1>
+                <h1 class="textresults">BLANK: <span id="blank"></span></h1>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then PoppPer.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            $("#start").on("click", start);
+            $("#done").on("click", stop);
+        };
+        var correct = 0;
+        var wrong = 0;
+        var timer = 120;
+        var blank = 0;
+        var intervalId;
+        var isRunning = false;
+
+        function start() {
+            if (!isRunning) {
+                intervalId = setInterval(decrement, 1000);
+                isRunning = true;
+                blank = 0;
+                correct = 0;
+                wrong = 0;
+                timer = 120;
+            }
+        }
+        function results() {
+            var villianA = document.forms.trivia.villian.value;
+            var fatherA = document.forms.trivia.father.value;
+            var alfredA = document.forms.trivia.alfred.value;
+            var sonA = document.forms.trivia.son.value;
+            var robinA = document.forms.trivia.robin.value;
+            var aceA = document.forms.trivia.ace.value;
+            var jasonA = document.forms.trivia.jason.value;
+
+            if (villianA === "d") {
+                correct++;
+            } else if (villianA === "") {
+                blank++
+            } else {
+                wrong++
+            }
+            if (fatherA === "d") {
+                correct++;
+            } else if (fatherA === "") {
+                blank++
+            } else {
+                wrong++
+            }
+            if (alfredA === "d") {
+                correct++;
+            } else if (alfredA === "") {
+                blank++
+            } else {
+                wrong++
+            }
+            if (sonA === "d") {
+                correct++;
+            } else if (sonA === "") {
+                blank++
+            } else {
+                wrong++
+            }
+            if (robinA === "d") {
+                correct++;
+            } else if (robinA === "") {
+                blank++
+            } else {
+                wrong++
+            }
+            if (aceA === "d") {
+                correct++;
+            } else if (aceA === "") {
+                blank++
+            } else {
+                wrong++
+            }
+            if (jasonA === "d") {
+                correct++;
+            } else if (jasonA === "") {
+                blank++
+            } else {
+                wrong++
+            }
+            $("#correct").text(correct);
+            $("#wrong").text(wrong);
+            $("#blank").text(blank);
+        }
+
+        function decrement() {
+
+            timer--;
+
+            $("#show-number").html("<h2>" + timer + "</h2>");
+
+            if (timer === 0) {
+
+                stop();
+
+                document.getElementById("resultsPage").style.display = "block";
+                document.getElementById("div1").style.display = "none";
+                document.getElementById("startDiv").style.display = "block";
+
+                timer = 120;
+            }
+        }
+
+        function stop() {
+            if (isRunning) {
+                isRunning = false;
+                clearInterval(intervalId);
+                results()
+
+            }
+        }
+
+
+        document.getElementById("start").onclick = function () {
+            document.getElementById("div1").style.display = "block";
+            document.getElementById("startDiv").style.display = "none";
+            document.getElementById("timeLeft").style.display = "block";
+        }
+
+        document.getElementById("done").onclick = function () {
+            document.getElementById("div1").style.display = "none";
+            document.getElementById("startDiv").style.display = "block";
+            document.getElementById("resultsPage").style.display = "block";
+
+        }
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
