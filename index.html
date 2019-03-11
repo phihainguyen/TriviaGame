@@ -42,7 +42,7 @@
                         <div class="collapse" id="collapseExample">
                             <div class="card card-body">
 
-                                <form class="quiz" name="trivia">
+                                <form id="reset" class="quiz" name="trivia">
                                     <p>1) What super villain once broke Batman's back, leaving him crippled and
                                         wheelchair-bound?</p>
                                     <input type="radio" name="villian" value="a"> Joker <br>
@@ -143,6 +143,7 @@
                 correct = 0;
                 wrong = 0;
                 timer = 120;
+                document.getElementById('reset').reset(); 
             }
         }
         function results() {
